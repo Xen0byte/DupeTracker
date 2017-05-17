@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form tag="cons" key="form">
+	<group label="Services to Provide">
+		<services/>
+	</group>
+	<group label="Complaint">
+		<notes code="11429006" label="Broken Tag" key="ComplaintNotes"  tag="respo"/>
+	</group>
+	<group label="Medical History">
+        <pmh label="Past Medical History"/>
+        <fh label="Family History"/>
+        <dh label="Drug History"/>
+        <ah label="Allergies"/>
+	</group>
+	<group label="Broken Tag" tag="respo">
+		<textbox label="Occupation" code="14679004" type="text" global="true"/>
+		<list label="Marital Status" code="276124005" global="true">
+			<item></item>
+			<item code="125681006">Single</item>
+			<item code="87915002">Married</item>
+			<item code="13184001">Separated</item>
+			<item code="20295000">Divorced</item>
+			<item code="33553000">Widowed</item>
+		</list>
+		<list label="Cigarette Smoker" code="65568007" global="true">
+			<item></item>
+			<item code="8392000">Non-smoker</item>
+			<item code="230059006">Occasional cigarette smoker (less than 1 per day)</item>
+			<item code="230060001">Light cigarette smoker  (1-9 per day)</item>
+			<item code="160604004">Moderate cigarette smoker (10-19 per day)</item>
+			<item code="160605003">Heavy cigarette smoker (20-39 per day)</item>
+			<item code="160606002">Very heavy cigarette smoker (40+ per day)</item>
+		</list>
+		<check label="Cigar Smoker" code="59978006" global="true"/>
+		<list label="Ex-Cigarette Smoker" code="8517006" global="true">
+			<item></item>
+			<item code="8392000">Never smoked</item>
+			<item code="266921000">Occasional cigarette smoker (less than 1 per day)</item>
+			<item code="266922007">Light cigarette smoker  (1-9 per day)</item>
+			<item code="266923002">Moderate cigarette smoker (10-19 per day)</item>
+			<item code="266924008">Heavy cigarette smoker (20-39 per day)</item>
+			<item code="266925009">Very heavy cigarette smoker (40+ per day)</item>
+		</list>
+		<check label="Ex-Cigar Smoker" code="160621008" global="true"/>
+		<textbox label="Stopped smoking" type="date" code="160617001" global="true"/>
+		<clinical_statement>
+			<list label="Alcohol intake" code="7981000000132" global="true">
+				<item></item>
+				<item code="228274009">Lifetime Non-drinker</item>
+				<item code="105542008">Non-drinker</item>
+				<item code="82581004">Ex-drinker</item>
+				<item code="28127009">Social drinker</item>
+				<item code="160575005">Light drinker - 1-2u/day</item>
+				<item code="160576006">Moderate drinker - 3-6u/day </item>
+				<item code="82581004">Heavy drinker - 7-9u/day </item>
+				<item code="82581004">Very heavy drinker - greater than 9 units/day </item>
+				<item code="82581004">Problem drinker</item>
+			</list>
+			<textbox label="Stopped drinking alchohol" type="date" code="160579004" global="true"/>
+		</clinical_statement>
+		<clinical_statement>
+			<notes label="Exercise history" code="138013009" global="true"/>
+			<textbox label="Frequency of exercise" code="228449008" global="true"/>
+			<textbox label="Time spent exercising" code="228450008" global="true"/>
+		</clinical_statement>
+		<notes label="Diet" code="162512009" global="true"/>
+		<notes label="Other details" code="160476009"/>
+	</group>
+	<group label="Consultation">
+		<metafields/>
+		<notes code="271906008" label="Broken Tag" tag="respo"/>
+		<notes code="163001000000103" label="Broken Tag" tag="respo"/>
+		<notes code="182991002" label="Broken Tag" tag="respo"/>
+	</group>
+	<group label="Actions">
+		<button label="Prescribe" action="Prescribe"/>
+		<button label="Repeat" action="PrescribeRepeat"/>
+		<button label="Refer Patient" action="Refer"/>
+		<button label="Discharge" action="Discharge"/>
+		<button label="Assign Task" action="AssignTask"/>
+	</group>
+	<group label="Today's Prescriptions">
+		<prescriptions/>
+	</group>
+</form>
